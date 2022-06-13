@@ -11,12 +11,16 @@ import {
 import styles from "./styles/tailwind.css"
 
 export const links = () => {
-  return [{ rel: "stylesheet", href: styles }]
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+    { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+  ]
 }
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "André Philipsson",
   viewport: "width=device-width,initial-scale=1",
 });
 
